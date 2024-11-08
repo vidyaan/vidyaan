@@ -1,0 +1,131 @@
+1.Find the smallest digit in a number:
+#include <stdio.h>
+#include <stdlib.h>
+
+int smallest_digit(int number) {
+    number = abs(number); 
+    int min_digit = 9;    
+
+    while (number > 0) {
+        int digit = number % 10; 
+        if (digit < min_digit) {
+            min_digit = digit;  
+        }
+        number /= 10;
+    }
+
+    return min_digit;
+}
+
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    
+    int result = smallest_digit(number);
+    printf("The smallest digit is: %d\n", result);
+
+    return 0;
+}
+
+2.Find the number of even digits in a number
+#include <stdio.h>
+#include <stdlib.h>
+
+int count_even_digits(int number) {
+    number = abs(number); 
+    int count = 0;
+
+    while (number > 0) {
+        int digit = number % 10; 
+        if (digit % 2 == 0) {   
+            count++;            
+        }
+        number /= 10; 
+    }
+
+    return count;
+}
+
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    
+    int result = count_even_digits(number);
+    printf("The number of even digits is: %d\n", result);
+
+    return 0;
+}
+
+3.Find sum of the digits in a number
+#include <stdio.h>
+#include <stdlib.h>
+
+int sum_of_digits(int number) {
+    number = abs(number); 
+    int sum = 0;
+
+    while (number > 0) {
+        int digit = number % 10; 
+        sum += digit;            
+        number /= 10;            
+    }
+
+    return sum;
+}
+
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    
+    int result = sum_of_digits(number);
+    printf("The sum of digits is: %d\n", result);
+
+    return 0;
+}
+
+4.Find the second smallest digit in a number
+#include <stdio.h>
+#include <stdlib.h>
+
+int second_smallest_digit(int number) {
+    number = abs(number); 
+
+    int min_digit = 10, second_min_digit = 10;
+
+    while (number > 0) {
+        int digit = number % 10;
+
+        if (digit < min_digit) {
+            second_min_digit = min_digit;
+            min_digit = digit;
+        } else if (digit > min_digit && digit < second_min_digit) {
+            second_min_digit = digit;
+        }
+
+        number /= 10;
+    }
+
+    if (second_min_digit == 10) {
+        return -1;
+    }
+
+    return second_min_digit;
+}
+
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    
+    int result = second_smallest_digit(number);
+    if (result == -1) {
+        printf("There is no distinct second smallest digit.\n");
+    } else {
+        printf("The second smallest digit is: %d\n", result);
+    }
+
+    return 0;
+}
