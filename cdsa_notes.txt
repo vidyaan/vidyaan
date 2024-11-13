@@ -1,0 +1,171 @@
+CDSA and Problem solving training (10 days) City Engg College, Blr
+
+Trainer Repo URL:
+https://github.com/neelmyna/cdsa_city_nov24
+
+
+DAY1 MONDAY 04-11-2024
+
+Git commands:
+git status  # 
+git add .
+git commit -m "relavent msg"
+git push origin main
+---------------------------------------------
+'A0'
+'A' and '0'
+
+'A' has ASCII value of 65 01000001
+'0' has ASCII value of 48 00110000
+
+
+0 to 15
+
+39
+0010 0111
+
+39
+00000000 00100111
+
+-18
+18
+0001 0010
+1110 1101
+        1
+1110 1110
+-1*2(7) + 1*2(6) + 1*2(5) + 14
+-1*128 + 64 + 32 + 14
+= -128 + 110
+= -18
+
+-128 to +127 (signed one byte)
+1000 0000
+-1*2(7) 0
+= -128
+
+0111 1111
+= 127
+
+1100 0000
+1*2(7) + 1*2(6)
+= 128 + 64
+= 192
+
+0 to 255 (unsigned one byte)
+
+PPLs have a issue of data binding, and structuring the code in heirarchical design.
+Thus, PP strategy creates the issues like Tight coupling
+Difficult to create very big applications.
+
+OOP came as the answer for the above issues.
+IN OOP, we have the concepts like
+A Abstraction	To hide the implementations make the user easy to use.
+E Encapsulation	Better way of data and method binding (Access specifiers)	
+I Inheritance	Better way of reusing the existing solutions
+P Polymorphism	Applying modifications to the existing solution is easy
+
+C++ was the 1st successful OOPL built on C
+C++ = C + OOc
+C++ is an increment to C
+
+But C++ was not so high level and it was not machine independent language.
+
+Java came as a better alternative to C++
+More high level (Abstractions on Pointers, operator overloading, no global data, no hybrid inheritance)
+Exception handling
+By default multi threaded
+Machine independent
+Plug-ins can be easily created with help of Interfaces
+
+
+
+CLASS-2 SUNDAY, 1ST MARCH 2020
+
+STRUCTURE OF C PROGRAM
+#include
+other pre processors
+struct union and enum definitions 
+function declarations / prototype
+function definitions / solution / instructions / business logic
+
+
+The very existance use of programming and even a Computer for that matter, is 
+DATA. So at the core of programming is DATA.
+Data must be given at most priority.
+There are different kind of data.
+e.g. Numeric, alphabetic, alphanumeric, audio, image, video etc.
+DATA-TYPE	"Type of the data"
+Data types available in C are:
+Numeric: int, float, double
+alpha, alphanumeric: char, string
+We also have manipulators
+The 2 basic numeric data types:
+int			4 bytes
+double		8 bytes
+Every data in memory of the computer has a fixed size (in terms of bytes)
+
+float (half of double)	4 bytes (to store precision along with number)
+Manipulators:
+1. which changes the size
+	short	can be applied only to int (so  short int   is 2 bytes)
+	long	can be applied to int and double
+So long int is 4 bytes,  long long int is 8 bytes and int is 4 bytes
+
+2. which changes the sign
+	signed		to store -ve or +ve numbers
+	unsigned	to store only +ve numbers
+Note: All variables by default are signed.
+
+char		to store one ASCII character
+char[]		to store a string (a word, or gorup of words) " "
+
+LOOPS
+for 			0 or N times (where N value is known)
+while			0 or X times (Where X is unknown value)
+do-while		1 or X times (Where X is unknown value)
+
+CONDITIONAL
+if		else	switch	case	default		break	continue	return
+if(confition)
+  then fo this.
+  
+if(confition)
+	do this;
+else
+	do this;
+
+if(c)
+	if(c)
+	
+if(c1)
+   if(c2)
+     do this
+   else if(3)
+     do this
+   else
+     do this
+else
+   do this
+   
+if(finalYear)
+   allow;
+else if(pre )
+     if(aggre > 70)
+	    allow
+else
+    do not allow;
+	
+1. Check if a number is positive
+2. Check if a number is Even
+3. Check if a number is Even or Odd
+4. Check if a character is upper case 
+5. Check if a number is Perfect Square
+6. Check if a person is eligible to vote on age basis
+7. Check if a year is Leap year
+8. Check if an alphabet is a Vowel
+9. Check if a character is a digit or alphabet or a symbol
+10. Check if a number is divisible by 5
+11. Check if a number is 2 digit number
+12. Find smallest of 2 numbers
+13. Find biggest of 2 distinct numbers
+14. Find smallest of 3 distinct numbers
