@@ -1,34 +1,43 @@
-public class Operators {
+public class ConditionalStatements {
     public static void main(String[] args) {
-        int num1 = 20;
-        int num2 = 30;
+        int num = 27;
 
 
-        // Arithmetic Operators: +, -, *, /, %
-        System.out.println("Addition: " + num1 + " + " + num2 + ": " + (num1 + num2));
-        System.out.println("Subtraction: " + num1 + " - " + num2 + ": " + (num1 - num2));
-        System.out.println("Multiplication: " + num1 + " * " + num2 + ": " + (num1 * num2));
-        System.out.println("Division (Quotient): " + num2 + " / " + num2 + ": " + (num1 / num2));
-        System.out.println("Division (Remainder/Modulus): " + num2 + " % " + num1 + ": " + (num1 % num2));
+        // If Statement
+        if (num % 2 == 0) {
+            System.out.println(" " + num + " is an Even Number");
+        }
 
 
-        // Relational Operators: >, <, <=, >=, ==, !=
-        System.out.println("Greater than: " + num1 + " > " + num2 + ": " + (num1 > num2));
-        System.out.println("Lesser than: " + num1 + " < " + num2 + ": " + (num1 < num2));
-        System.out.println("Greater than and Equal to: " + num1 + " >= " + num2 + ": " + (num1 >= num2));
-        System.out.println("Lesser than and Equal to: " + num1 + " <= " + num2 + ": " + (num1 <= num2));
-        System.out.println("Equal to: " + num1 + " == " + num2 + ": " + (num1 == num2));
-        System.out.println("Not Equal to: " + num1 + " != " + num2 + ": " + (num1 != num2));
-
-        int max = (num1 > num2) ? num1 : num2;
-        System.out.println("Maximum Value: " + max);
-
-        boolean evenOrOdd = (num1 % 2 == 0) ? true : false;
-        System.out.println("Number 1 is Even: " + evenOrOdd);
+        // If-Else Statement
+        if (num % 2 == 0) {
+            System.out.println(" " + num + " is an Even Number");
+        } else {
+            System.out.println(" " + num + " is an Odd Number");
+        }
 
 
-        boolean check = (num2 % 2 == 0) ? true : false;
-        System.out.println("Number 2 is Even: " + check);
+        // Nested If-Else Statement
+        if (num % 2 == 0) {            
+            if (num % 5 == 0){
+                System.out.println(" " + num + " is an Even Number and it is also Divisible by 5");
+            } else {
+                System.out.println(" " + num + " is an Even Number but not Divisible by 5");
+            }
+        } else {
+            System.out.println(" " + num + " is an Odd Number");
+        }
+
+
+        // If-Else Ladder
+        if (num % 2 == 0) {            
+            System.out.println(" " + num + " is divisible by 2");
+        } else if (num % 5 == 0) {
+            System.out.println(" " + num + " is divisible by 5");
+        } else {
+            System.out.println(" " + num + " is not divisible by both 2 & 5");
+        }
+
+
     }
 }
-
